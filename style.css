@@ -1851,13 +1851,15 @@ body, html {
 
   .menu {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
     color: white;
     position: absolute;
-    right: 1rem;
-    width: calc(100% - 2rem); /* Adjusting width to prevent overflow */
+    right: -20rem;
+    box-sizing: border-box;
+    width: 100%; /* Adjusting width to prevent overflow */
   }
 
   .menu .nav-links {
@@ -1921,8 +1923,9 @@ body, html {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1.7rem;
+    padding: 1.5rem 1rem;
     box-sizing: border-box;
+width: 100%;
   }
 
   .navigations > ul {
@@ -2073,20 +2076,25 @@ body, html {
 
   .content {
     width: 100%;
+    font-size: 0.7em;
+    font-weight: 100;
   }
 
   .image {
     border: 2px solid rgb(0, 239, 252);
     position: relative;
     border-radius: 0.3rem;
-    margin: 1rem 0;
+    margin: 1rem 0.4rem;
+    width: 14rem;
+    height: 14rem;
   }
 
   .image > img {
-    width: 100%; /* Adjusted to fit within container */
+    width: 14rem; /* Adjusted to fit within container */
+    height: 14rem;
     max-width: 18rem;
     position: inherit;
-    bottom: 0.5rem;
+    bottom: 1.5rem;
     right: 0.5rem;
     border-radius: 0.3rem;
     filter: grayscale(60%) sepia(70%) hue-rotate(60deg) saturate(200%);
@@ -2120,7 +2128,7 @@ body, html {
   }
 
   .space-between-bullets {
-    width: 100%; /* Adjusted width */
+    width: 60%; /* Adjusted width */
     display: flex;
     justify-content: space-between;
     margin: 1.3rem 0;
