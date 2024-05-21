@@ -1841,12 +1841,14 @@ body, html {
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
+    margin: 0;
+    padding: 0;
   }
-  
+
   .hOvuuP {
     display: none;
   }
-  
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -1855,24 +1857,25 @@ body, html {
     color: white;
     position: absolute;
     right: 1rem;
+    width: calc(100% - 2rem); /* Adjusting width to prevent overflow */
   }
-  
+
   .menu .nav-links {
     display: none;
     flex-direction: column;
   }
-  
+
   .menu .nav-links a {
     color: white;
     text-decoration: none;
     padding: 10px;
     text-align: center;
   }
-  
+
   .menu .nav-links a:hover {
     background-color: #555;
   }
-  
+
   .menu .hamburger {
     cursor: pointer;
     display: flex;
@@ -1881,20 +1884,20 @@ body, html {
     width: 25px;
     height: 25px;
   }
-  
+
   .menu .hamburger div {
     width: 25px;
     height: 2.5px;
     background-color: rgb(0, 239, 252);
   }
-  
+
   .itsh5 {
     font-size: 14px;
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
   }
-  
+
   .circle {
     background-color: #002b46;
     width: 100%;
@@ -1904,7 +1907,7 @@ body, html {
     filter: blur(50rem);
     top: 8rem;
   }
-  
+
   .logo {
     color: rgb(0, 239, 252);
     font-family: "Space Mono", monospace;
@@ -1912,15 +1915,16 @@ body, html {
     font-style: normal;
     font-size: calc(0.2rem + 0.8vw);
   }
-  
+
   .navbar {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 1.7rem;
+    box-sizing: border-box;
   }
-  
+
   .navigations > ul {
     display: none;
     list-style: none;
@@ -1930,38 +1934,40 @@ body, html {
     position: relative;
     right: 3rem;
   }
-  
+
   .navigations > ul > li {
     margin: 0rem 1rem;
   }
-  
+
   .hero {
-    padding: 3rem 0rem 0rem calc(2em + 0.5vw);
-    width: 100vw;
+    padding: 3rem 0rem 0rem calc(1em + 0.5vw);
+    width: 100%;
+    box-sizing: border-box;
   }
-  
+
   .nameHead {
     font-size: calc(1.8em);
   }
-  
+
   .paragraph {
     width: 98%;
     font-size: calc(0.7em);
   }
-  
+
   body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
   }
-  
+
   .space {
     position: relative;
     width: 100%;
     height: 100vh;
     background-color: #000000;
   }
-  
+
   .stars {
     position: absolute;
     top: 0;
@@ -1969,7 +1975,7 @@ body, html {
     width: 100%;
     height: 100%;
   }
-  
+
   .star {
     position: absolute;
     background-color: #ffffff64;
@@ -1979,7 +1985,7 @@ body, html {
     animation: blink-animation 1s infinite alternate;
     opacity: 0;
   }
-  
+
   @keyframes blink-animation {
     0% {
       opacity: 0;
@@ -1988,7 +1994,7 @@ body, html {
       opacity: 1;
     }
   }
-  
+
   .feather-github:hover,
   .feather-instagram:hover,
   .feather-twitter:hover,
@@ -1996,31 +2002,31 @@ body, html {
   .feather-codepen:hover {
     stroke: rgb(0, 239, 252);
   }
-  
+
   .dVLQAC {
     list-style: none;
     position: fixed;
     right: calc(2em + 1vw);
     bottom: 2rem;
   }
-  
+
   .lim {
     margin-top: 0.5rem;
   }
-  
+
   .fade-enter-done {
     transition: transform 0.3s ease;
   }
-  
+
   .fade-enter-done:hover {
     transform: translateY(-3px);
   }
-  
+
   .vertical-line {
     border-left: 2px solid #8892b0;
     height: 70px;
   }
-  
+
   .btn-hover {
     transition-property: transform, box-shadow;
     transition-duration: 0.2s, 0.2s;
@@ -2034,7 +2040,7 @@ body, html {
     border-radius: 0.2rem;
     margin-top: 2rem;
   }
-  
+
   .btn-hover1 {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid rgb(0, 239, 252);
@@ -2042,50 +2048,52 @@ body, html {
     padding: 0.4rem 0.8rem;
     border-radius: 0.2rem;
   }
-  
+
   .btn-hover:hover {
     box-shadow: 4px 4px 1px rgba(0, 239, 252);
     transform: translate(-3px, -3px);
   }
-  
+
   .btn-hover1:hover {
     box-shadow: 4px 4px 1px rgba(0, 239, 252);
     transform: translate(-3px, -3px);
   }
-  
+
   .About {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
-    width: 100%;
-    margin: 0 1.8rem;
+    width: 94%;
+    margin: 0 1rem;
     position: relative;
     top: 14rem;
     flex-wrap: wrap;
+    box-sizing: border-box;
   }
-  
+
   .content {
     width: 100%;
   }
-  
+
   .image {
     border: 2px solid rgb(0, 239, 252);
     position: relative;
     border-radius: 0.3rem;
     margin: 1rem 0;
   }
-  
+
   .image > img {
-    width: 18rem;
+    width: 100%; /* Adjusted to fit within container */
+    max-width: 18rem;
     position: inherit;
     bottom: 0.5rem;
     right: 0.5rem;
     border-radius: 0.3rem;
     filter: grayscale(60%) sepia(70%) hue-rotate(60deg) saturate(200%);
     margin: 1rem 0;
+    box-sizing: border-box;
   }
-  
+
   .image > img:hover {
     position: inherit;
     bottom: 0.8rem;
@@ -2093,37 +2101,40 @@ body, html {
     filter: none;
     transition: transform 0.3s ease;
   }
-  
+
   .about-head-outer {
     margin: 1.6rem 0;
     display: flex;
     text-align: center;
+    width: 100%; /* Adjusted width */
+    justify-content: center;
+    box-sizing: border-box;
   }
-  
+
   .AboutHead {
     font-size: calc(1em + 1vw);
   }
-  
+
   .about-para {
     margin: 0.8rem 0;
   }
-  
+
   .space-between-bullets {
-    width: 50%;
+    width: 100%; /* Adjusted width */
     display: flex;
     justify-content: space-between;
     margin: 1.3rem 0;
+    box-sizing: border-box;
   }
-  
+
   .amazing-bullets {
     list-style: none;
   }
-  
+
   .amazing-bullets > li {
-    width: 10rem;
-    /* background-color: purple; */
+    width: 100%; /* Adjusted width */
   }
-  
+
   .amazing-bullets li::before {
     content: "";
     display: inline-block;
@@ -2136,7 +2147,7 @@ body, html {
     margin-bottom: 0.2rem;
     vertical-align: middle;
   }
-  
+
   .custom-hr {
     border: none;
     border-top: 1px solid #8892b0;
@@ -2145,6 +2156,6 @@ body, html {
     opacity: 0.4;
     position: relative;
     top: 1.5rem;
-    margin-left: 1rem;
   }
 }
+
