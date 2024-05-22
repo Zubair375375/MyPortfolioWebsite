@@ -2275,7 +2275,7 @@ body, html {
   }
 
   .hero {
-    padding: 3rem 0rem 0rem calc(1em + 0.5vw);
+    padding: 3rem 0rem 0rem calc(0.7em);
     width: 100%;
     box-sizing: border-box;
   }
@@ -2399,7 +2399,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     width: 94%;
-    margin: 0 1rem;
+    margin: 0 0.7rem;
     position: relative;
     top: 14rem;
     flex-wrap: wrap;
